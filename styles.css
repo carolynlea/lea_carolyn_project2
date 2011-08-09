@@ -1,0 +1,49 @@
+/*
+Project 2
+Visual Frameworks 1108
+by Carolyn Lea
+August 8, 2011
+*/
+
+h1{
+	border: 1px solid #663300;
+	margin:0px;
+	padding:10px;
+	background:#37382C;
+	color:#FEFEF0;
+	font-family:georgia;	
+}
+
+fieldset{
+	border:1px solid #663300;
+	background:#FEFEF0;
+}
+
+legend{
+	color:#37382C;
+}
+
+label{
+	color:#37382C;
+}
+
+button{
+	background:#37382C;
+	color:#FEFEF0;
+}
+
+p{
+	color:#37382C;
+}
+
+textarea{
+	color:#000000;
+}
+
+input{
+	color:#000000;
+}
+
+select{
+	color:#000000;
+}
