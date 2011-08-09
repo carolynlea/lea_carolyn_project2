@@ -5,6 +5,8 @@ by Carolyn Lea
 August 8, 2011
 */
 
+
+
 h1{
 	border: 1px solid #663300;
 	margin:0px;
@@ -22,34 +24,42 @@ fieldset{
 legend{
 	color:#37382C;
 	font-family:georgia;
+	font-weight:bold;
 }
 
 label{
 	color:#37382C;
 	font-family:georgia;
+	line-height:2em;
+	text-transform:capitalize;
 }
 
 button{
 	background:#37382C;
 	color:#FEFEF0;
 	font-family:georgia;
+	
 }
 
 p{
 	color:#37382C;
 	font-family:georgia;
+	text-align:center;
 }
 
 textarea{
 	color:#000000;
 	width:320px;
 	height:80px;
+	font-style:italic;
 }
 
 input{
 	color:#000000;
+	font-style:italic;
+	
 }
 
 select{
-	color:#000000;
+	
 }
