@@ -34,25 +34,27 @@
 				<!--Required select and option tags.-->
 					
 				<label for="dungeon_type">Dungeon Type</label>
-				<select>
-					<option value ="campsite">Campsite</option>
-					<option value ="cave">Cave</option>
-					<option value ="fort">Fort</option>
-					<option value ="mine">Mine</option>
-					<option value ="portal">Portal</option>
-					<option value ="ruin">Ruin</option>
+				<select id = "dungeon_type">
+					<option value="default">Choose Dungeon</option>
+					<option value ="campsite" id = "campsite">Campsite</option>
+					<option value ="cave" id = "cave">Cave</option>
+					<option value ="fort" id = "fort">Fort</option>
+					<option value ="mine" id = "mine">Mine</option>
+					<option value ="portal" id = "portal">Portal</option>
+					<option value ="ruin" id = "ruin">Ruin</option>
 				</select><br/>
 				
 				<label for="location">Location</label>
-				<select>
-					<option value ="north_area">North Area</option>
-					<option value ="northeast_area">NorthEast Area</option>
-					<option value ="northwest_area">NorthWest Area</option>
-					<option value ="east_area">East Area</option>
-					<option value ="south_area">South Area</option>
-					<option value ="southeast_area">SouthEast Area</option>
-					<option value ="southwest_area">SouthWest Area</option>
-					<option value ="west_area">West Area</option>
+				<select id = "location">
+					<option value="default">Choose Location</option>
+					<option value ="north_area" id = "north_area">North Area</option>
+					<option value ="northeast_area" id = "northeast_area">NorthEast Area</option>
+					<option value ="northwest_area" id = "northwest_area">NorthWest Area</option>
+					<option value ="east_area" id = "east_area">East Area</option>
+					<option value ="south_area" id = "south_area">South Area</option>
+					<option value ="southeast_area" id = "southeast_area">SouthEast Area</option>
+					<option value ="southwest_area" id = "southwest_area">SouthWest Area</option>
+					<option value ="west_area" id = "west_area">West Area</option>
 				</select><br/>
 				
 				<label for="date_found">Date Found</label>  <!--Required date tag.-->
@@ -72,14 +74,14 @@
 				<input id="friendly" name="occupants" type="checkbox"/><br/>
 				
 				<select name="selOne" id="selOne" onchange="doChange(this, 'selTwo')">
-				<option value="default">---Occupant Type---</option>
+				<option value="default">Occupant Type</option>
 				<option value="animal">Animal</option>
 				<option value="human">Human</option>
 				<option value="mythic">Mythic</option>
 				<option value="undead">Undead</option>
 				</select>
 				<select name="selTwo" id="selTwo">
-				<option value="default">---Choose One---</option>
+				<option value="default">Choose One</option>
 				</select>
 			</fieldset>
 			
