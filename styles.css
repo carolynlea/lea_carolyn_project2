@@ -8,7 +8,7 @@ August 8, 2011
 
 
 h1{
-	border: 1px solid #663300;
+	border: 1px solid #37382C;
 	margin:0px;
 	padding:10px;
 	background:#37382C;
@@ -61,5 +61,6 @@ input{
 }
 
 select{
-	
+	background-color:#7C8055;
+	color:#FEFEF0;
 }
