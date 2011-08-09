@@ -65,3 +65,58 @@ function removeAll(list){
 		list.remove(1);
 	}
 };
+
+function storeItems(id){
+	var name = document.getElementById('name').value;
+	var dungeon_type = document.getElementById('dungeon_type').value;
+	var location = document.getElementById('location').value;
+	var date_found = document.getElementById('date_found').value;
+	var populated = document.getElementById('populated').value;
+	var friendly = document.getElementById('friendly').value;
+	var selOne = document.getElementById('selOne').value;
+	var no_loot_here = document.getElementById('no_loot_here').value;
+	var notes = document.getElementById('notes').value;
+	var selTwo = document.getElementById('selTwo').value;
+	localStorage.setItem('appName', name);
+	localStorage.setItem('appDungeonType', dungeon_type);
+	localStorage.setItem('appLocation', location);
+	localStorage.setItem('appDateFound', date_found);
+	localStorage.setItem('appPopulated', populated);
+	localStorage.setItem('appFriendly', friendly);
+	localStorage.setItem('appSelOne', selOne);
+	localStorage.setItem('appNoLootHere', no_loot_here);
+	localStorage.setItem('appNotes', notes);
+	localStorage.setItem('appSelTwo', selTwo);
+	
+};
+
+function getItems(){
+	if (localStorage.getItem('appName')) {
+		var name = localStorage.getItem('appName');
+		var dungeon_type = localStorage.getItem('appDungeonType');
+		var location = localStorage.getItem('appLocation');
+		var date_found = localStorage.getItem('appDateFound');
+		var populated = localStorage.getItem('appPopulated');
+		var friendly = localStorage.getItem('appFriendly');
+		var selOne = localStorage.getItem('appSelOne');
+		var no_loot_here = localStorage.getItem('appNoLootHere');
+		var notes = localStorage.getItem('appNotes');
+		var selTwo = localStorage.getItem('appSelTwo');
+		
+		var viewForm = [
+		name,
+		dungeon_type,
+		location,
+		date_found,
+		populated,
+		friendly,
+		selOne,
+		no_loot_here,
+		notes,
+		selTwo
+		];
+		alert(viewForm);
+		onSubmit = storeItems();
+	}
+};
+
