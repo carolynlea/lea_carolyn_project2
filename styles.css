@@ -15,29 +15,35 @@ h1{
 }
 
 fieldset{
-	border:1px solid #663300;
+	border:1px solid #37382C;
 	background:#FEFEF0;
 }
 
 legend{
 	color:#37382C;
+	font-family:georgia;
 }
 
 label{
 	color:#37382C;
+	font-family:georgia;
 }
 
 button{
 	background:#37382C;
 	color:#FEFEF0;
+	font-family:georgia;
 }
 
 p{
 	color:#37382C;
+	font-family:georgia;
 }
 
 textarea{
 	color:#000000;
+	width:320px;
+	height:80px;
 }
 
 input{
