@@ -1,0 +1,37 @@
+h1{
+	border: 1px solid #37382C;
+	margin:0px;
+	padding:10px;
+	background:#37382C;
+	color:#FEFEF0;
+	font-family:georgia;	
+}
+
+label{
+	color:#37382C;
+	font-family:georgia;
+	line-height:2em;
+	text-transform:capitalize;
+}
+
+button{
+	background:#37382C;
+	color:#FEFEF0;
+	font-family:georgia;
+}
+
+input{
+	color:#000000;
+	font-style:italic;
+	
+}
+
+#main {
+	display: block;
+}
+
+#clear{
+	display:none; margin:15px;
+		}
+
+	#clear a{color:#990000;}
