@@ -3,6 +3,7 @@
 //Visual Frameworks 1108
 //August 2, 2011
 
+
 function doChange(srcList, targetId){
 	
 	var val = srcList.options[srcList.selectedIndex].value;
@@ -57,12 +58,33 @@ function addOption(value, list){
 		list.add(o, null);
 	}
 };
- 
+
 function removeAll(list){
 	
 	for(var i = 0, limit = list.options.length; i < limit - 1; ++i)
 	{
 		list.remove(1);
+	}
+};
+
+
+
+
+
+
+
+var clearLink = document.getElementById('clear');
+var anchorTags = clearLink.getElementsByTagName('a');
+
+function mouseHover(){
+	for (var i = 0, j = anchorTags.length; i < j; i++){
+		anchorTags[i].style.color = "#37382C";
+	}
+};
+
+function mouseOut(){
+	for (var i = 0, j = anchorTags.length; i < j; i++){
+		anchorTags[i].style.color = "#990000";
 	}
 };
 
@@ -116,7 +138,14 @@ function getItems(){
 		selTwo
 		];
 		alert(viewForm);
-		onSubmit = storeItems();
+		document.getElementById('main').style.display = "none";
+
 	}
 };
+
+function clearlocal(){
+	localStorage.clear();
+	return false;
+};
+
 

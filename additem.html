@@ -26,6 +26,7 @@
 		<header>
 			<h1>Add Dungeon</h1>  <!--Required h1 title of my page.-->
 		</header>
+		<div id = "main">
 		<form action="#" onSubmit = storeItems();>  <!--Required form tag.-->
 			<fieldset>  <!--Basic information about each Dungeon.-->
 				<legend>Dungeon</legend>
@@ -63,10 +64,10 @@
 				
 			</fieldset>
 			
-			<fieldset>
+			<!--<fieldset>
 				<legend>Occupants</legend>
 				
-				<!--Required checkbox tag.-->
+				
 			
 				<label for="populated">Populated?</label>
 				<input id="populated" name="occupants" type="checkbox"/>
@@ -84,7 +85,7 @@
 				<select name="selTwo" id="selTwo">
 				<option value="default">Choose One</option>
 				</select>
-			</fieldset>
+			</fieldset> -->
 			
 			<fieldset>
 				<legend>Loot</legend>
@@ -111,6 +112,10 @@
 <!--All the ending tags.-->
 
 		</form>
+		</div>
+			<p id = "clear"><a onmouseover = "mouseHover();" onmouseout = "mouseOut();" href = "#" onclick = "clearlocal(); location.reload();">clear local storage</a></p>
+		
+		
 	</body>
 </html>
 

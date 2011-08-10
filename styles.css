@@ -64,3 +64,10 @@ select{
 	background-color:#7C8055;
 	color:#FEFEF0;
 }
+
+.main {
+	display: block;
+}
+#clear{display:none; margin:15px;}
+	#clear a{color:#990000;}
+	
