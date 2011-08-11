@@ -44,7 +44,8 @@ button{
 p{
 	color:#37382C;
 	font-family:georgia;
-	text-align:center;
+	text-align:left;
+	text-decoration:none;
 }
 
 textarea{
@@ -66,7 +67,7 @@ select{
 }
 
 
-#clear{display:none; margin:15px;}
+#clear{display:block; margin:15px;}
 	#clear a{color:#990000;}
 	
 #clear a:hover{

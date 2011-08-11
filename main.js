@@ -109,8 +109,9 @@ function storeItems(id){
 	localStorage.setItem('appNoLootHere', no_loot_here);
 	localStorage.setItem('appNotes', notes);
 	localStorage.setItem('appSelTwo', selTwo);
-	document.getElementById('main').style.display = "none";
 	document.getElementById('clear').style.display = "block";
+	//document.getElementById('main').style.display = "none";
+	
 	
 };
 
@@ -140,6 +141,7 @@ function getItems(){
 		selTwo
 		];
 		alert(viewForm);
+		
 		
 
 	}
