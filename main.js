@@ -89,7 +89,7 @@ function mouseOut(){
 };
 */
 function storeItems(id){
-	var name = document.getElementById('name').value;
+	var dungeon_name = document.getElementById('dungeon_name').value;
 	var dungeon_type = document.getElementById('dungeon_type').value;
 	var location = document.getElementById('location').value;
 	var date_found = document.getElementById('date_found').value;
@@ -99,7 +99,7 @@ function storeItems(id){
 	var no_loot_here = document.getElementById('no_loot_here').value;
 	var notes = document.getElementById('notes').value;
 	var selTwo = document.getElementById('selTwo').value;
-	localStorage.setItem('appName', name);
+	localStorage.setItem('appDungeonName', dungeon_name);
 	localStorage.setItem('appDungeonType', dungeon_type);
 	localStorage.setItem('appLocation', location);
 	localStorage.setItem('appDateFound', date_found);
@@ -116,8 +116,8 @@ function storeItems(id){
 };
 
 function getItems(){
-	if (localStorage.getItem('appName')) {
-		var name = localStorage.getItem('appName');
+	if (localStorage.getItem('appDungeonName')) {
+		var dungeon_name = localStorage.getItem('appDungeonName');
 		var dungeon_type = localStorage.getItem('appDungeonType');
 		var location = localStorage.getItem('appLocation');
 		var date_found = localStorage.getItem('appDateFound');
@@ -129,7 +129,7 @@ function getItems(){
 		var selTwo = localStorage.getItem('appSelTwo');
 		
 		var viewForm = [
-		name,
+		dungeon_name,
 		dungeon_type,
 		location,
 		date_found,
@@ -141,6 +141,7 @@ function getItems(){
 		selTwo
 		];
 		alert(viewForm);
+		
 		
 		
 
