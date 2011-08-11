@@ -72,7 +72,7 @@ function removeAll(list){
 
 
 
-
+/*
 var clearLink = document.getElementById('clear');
 var anchorTags = clearLink.getElementsByTagName('a');
 
@@ -87,7 +87,7 @@ function mouseOut(){
 		anchorTags[i].style.color = "#990000";
 	}
 };
-
+*/
 function storeItems(id){
 	var name = document.getElementById('name').value;
 	var dungeon_type = document.getElementById('dungeon_type').value;
@@ -109,6 +109,8 @@ function storeItems(id){
 	localStorage.setItem('appNoLootHere', no_loot_here);
 	localStorage.setItem('appNotes', notes);
 	localStorage.setItem('appSelTwo', selTwo);
+	document.getElementById('main').style.display = "none";
+	document.getElementById('clear').style.display = "block";
 	
 };
 
@@ -138,7 +140,7 @@ function getItems(){
 		selTwo
 		];
 		alert(viewForm);
-		document.getElementById('main').style.display = "none";
+		
 
 	}
 };

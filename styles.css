@@ -65,9 +65,17 @@ select{
 	color:#FEFEF0;
 }
 
-.main {
-	display: block;
-}
+
 #clear{display:none; margin:15px;}
 	#clear a{color:#990000;}
+	
+#clear a:hover{
+	color:#7C8055;
+}
+
+#main {
+	display:block;
+}
+
+
 	

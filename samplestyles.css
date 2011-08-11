@@ -26,12 +26,17 @@ input{
 	
 }
 
-#main {
-	display: block;
+
+#clear a{color:#990000;}
+	
+#clear a:hover{
+	color:#7C8055;
 }
 
-#clear{
-	display:none; margin:15px;
-		}
+#main {
+	display:block;
+}
 
-	#clear a{color:#990000;}
+#clear {
+	display:none; margin:15px;
+}
